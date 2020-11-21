@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai5</title>
+</head>
+<body onload="main()">
+<script>
+    let arrStar =["Polaris", "Aldebaran", "Deneb", "Vega", "Altair", "Dubhe", "Regulus"];
+    let arrCons =["Ursa Minor", "Tarurus", "Cygnus", "Lyra", "Aquila", "Ursa Major", "Leo"];
+    function main(){
+    let star = prompt("nhap ten vi sao");
+    alert(checkStar(star));
+    }
+    function checkStar(star){
+        for(let x in arrStar){
+            if (arrStar[x]==star){
+                return arrStar[x]+" thuoc chom sao "+arrCons[x];
+            }
+        }return "Not found"
+
+    }
+</script>
+</body>
+</html>

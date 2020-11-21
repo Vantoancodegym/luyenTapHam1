@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>bai3</title>
+</head>
+<body onload="main()">
+<script>
+    function main(){
+        let a = +prompt("nhap A");
+        let b = +prompt("nhap B");
+        alert(checkAB(a,b));
+    }
+    function checkAB(a,b){
+        if (a>b){
+            return a + " lon hon "+b;
+        }else {
+            return "tong cua 2 so la: " + (a+b);
+        }
+    }
+</script>
+</body>
+</html>
